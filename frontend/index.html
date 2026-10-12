@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Find a restaurant | Tavola</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@700&display=swap"><link rel="stylesheet" href="assets/css/styles.css"></head><body>
+<main class="wrap">
+<section class="hero">
+ <div><h1>Find where to eat, then keep the list yours.</h1>
+ <p class="lead">Tavola lists every restaurant in your database by name, cuisine and borough. Search it, rank it, and add, edit or remove entries.</p>
+ <div class="cta"><a class="btn primary" href="search.html">Search restaurants</a><a class="btn" href="restaurants.html">Browse the full list</a></div></div>
+ <aside><span class="tag">Live from Atlas</span><dl>
+  <div><dt>Restaurants</dt><dd id="m-total">0</dd></div>
+  <div><dt>Cuisines</dt><dd id="m-cuisines">0</dd></div>
+  <div><dt>Boroughs</dt><dd id="m-boroughs">0</dd></div></dl></aside>
+</section>
+<section><h2>Three ways to explore</h2><p class="muted">Each page reads straight from the database.</p>
+ <div class="grid">
+  <a class="card" href="search.html"><span class="tag">Search</span><h3>Search by name or cuisine</h3><p class="muted">Type part of a name or pick a cuisine to narrow the list.</p><span class="arrow">Open search</span></a>
+  <a class="card" href="boroughs.html"><span class="tag">Group by</span><h3>Filter by borough</h3><p class="muted">See how many restaurants each borough has, then open one.</p><span class="arrow">View boroughs</span></a>
+  <a class="card" href="top-rated.html"><span class="tag">Aggregate</span><h3>Highest rated</h3><p class="muted">Ranked by average inspection score across all grades.</p><span class="arrow">See the top 10</span></a>
+ </div></section>
+<section class="split"><div><h2>Where the restaurants are</h2><p class="muted">Restaurant count per borough, grouped directly in MongoDB.</p><a class="btn" href="boroughs.html">Explore boroughs</a></div><div id="bars"><p class="muted">Loading</p></div></section>
+</main>
+<script src="assets/js/config.js"></script><script src="assets/js/common.js"></script><script src="assets/js/pages/home.js"></script></body></html>
